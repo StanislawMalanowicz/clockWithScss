@@ -1,0 +1,62 @@
+@mixin positionCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin hand {
+    position: absolute;
+    top: 11px;
+    width: 0;
+    height: 130px;
+    border: solid;
+    transform-origin: bottom center;
+}
+
+//************************************************
+
+body{
+    @include positionCenter();
+    background-color: aquamarine;
+    height: 100vh;
+    
+}
+.clock{
+    @include positionCenter();
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+    &__secondHand{
+       @include hand();
+       border: solid red 2px;
+        // animation: second 1s infinite linear;
+        z-index: 9;
+    }
+    &__minuteHand{
+        @include hand();
+        
+        // animation: second 6  *1s infinite  linear;
+
+
+    }
+    &__hourHand{
+        @include hand();
+        border: solid black 5px;
+        height: 100px;
+        top: 36px;
+        // transform: rotate(90deg);
+        // animation: second 6  *1s infinite linear;
+
+
+    }
+}
+@keyframes second{
+    // 0%{
+    //     transform: rotate(0);
+    // }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,70 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: aquamarine;
+  height: 100vh; }
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: solid;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .clock__secondHand {
+    position: absolute;
+    top: 11px;
+    width: 0;
+    height: 130px;
+    border: solid;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    border: solid red 2px;
+    z-index: 9; }
+  .clock__minuteHand {
+    position: absolute;
+    top: 11px;
+    width: 0;
+    height: 130px;
+    border: solid;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center; }
+  .clock__hourHand {
+    position: absolute;
+    top: 11px;
+    width: 0;
+    height: 130px;
+    border: solid;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+    border: solid black 5px;
+    height: 100px;
+    top: 36px; }
+
+@-webkit-keyframes second {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes second {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+/*# sourceMappingURL=style.css.map */
