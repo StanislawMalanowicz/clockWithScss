@@ -31,13 +31,13 @@ body{
     &__secondHand{
        @include hand();
        border: solid red 2px;
-        // animation: second 1s infinite linear;
+        animation: second 60s infinite linear;
         z-index: 9;
     }
     &__minuteHand{
         @include hand();
         
-        // animation: second 6  *1s infinite  linear;
+        // animation: second 60*60s infinite  linear;
 
 
     }
@@ -47,7 +47,7 @@ body{
         height: 100px;
         top: 36px;
         // transform: rotate(90deg);
-        // animation: second 6  *1s infinite linear;
+        // animation: second 60*60*60s infinite linear;
 
 
     }
